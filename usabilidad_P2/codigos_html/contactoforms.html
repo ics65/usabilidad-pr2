@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Página de formulario para ponerse en contacti con la enciclopedia">
+	<meta name="keywords" content="enciclopedia, salud, medicina">
+    <meta name="author" content="Irene Colomina y Lledó Clares">
+	<title>Contacto - Enciclopedia Médica Mindo</title>
+</head>
+<body>
+	<header> <!--cabecera-->
+		<figure>
+			<a href="index.html"><img src="../imagenes/logo-enciclopedia-peque.jpg" alt="Logo de la Enciclopedia Médica Mindo. Volver a la página principal"/></a>
+		</figure>
+		<h1>Enciclopedia Médica Mindo</h1>
+	</header>
+	
+	<nav> <!-- barra de navegación-->
+		<ul>
+		<li><a href="../index.html">Volver a la página principal</a></li>
+		<!-- <li><a href="-">Texto del enlace</a></li> -->
+		</ul>
+	</nav>
+	
+	<main>
+        <h2>Formulario de Contacto</h2>
+
+        <form action="respuesta_contacto.html" method="post">
+            <!-- Asunto -->
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required><br><br>
+
+            <!-- Comentario o Pregunta -->
+            <label for="comentario">Comentario o Pregunta:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+            <!-- Yo soy -->
+            <label for="yosoy">Yo soy:</label>
+            <select id="yosoy" name="yosoy">
+                <option value="paciente">Paciente</option>
+                <option value="cientifico">Científico</option>
+                <option value="medico">Médico</option>
+                <option value="educador">Educador</option>
+                <option value="fabricante">Fabricante</option>
+                <option value="periodista">Periodista</option>
+            </select><br><br>
+
+            <!-- Fecha de Nacimiento -->
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+
+            <!-- Sexo -->
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label><br>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label>
+            </fieldset><br>
+
+            <!-- Correo Electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Deseo recibir más información -->
+            <input type="checkbox" id="info" name="info">
+            <label for="info">Deseo recibir más información</label><br><br>
+
+            <!-- Enviar -->
+            <input type="submit" value="Enviar">
+			
+
+        </form>
+    </main>
+
+    <br>
+    <br>
+    <br>
+
+	<footer> <!-- pie de página-->
+		<nav>
+		<a href="../index.html">Volver a la página principal</a>
+		</nav>
+        <p><i>Irene Colomina y Lledó Clares &copy; 2024</i></p>
+    </footer>
+</body>
+</html>
